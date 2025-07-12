@@ -6,6 +6,6 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(_speed, 0, 0) * Time.deltaTime;
+        transform.position += transform.forward * _speed * Time.deltaTime;
     }
 }
